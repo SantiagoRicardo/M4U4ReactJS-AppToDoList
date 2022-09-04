@@ -1,9 +1,18 @@
+import { Form } from "./components/Form";
+import { Header } from "./components/Header";
+import { TaskList } from "./components/TaskList";
+
 function App() {
 
   return (
-    <>
-      <h1 className="bg-red-700 mt-6">Hola Mundo</h1>
-    </> 
+    <div className="container mx-auto mt-20">
+      <Header />
+      <div className="mt-12 md:flex">
+        <Form />
+        <TaskList />
+      </div>
+      
+    </div>
   );
 }
 
